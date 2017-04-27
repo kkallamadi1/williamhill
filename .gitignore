@@ -1,0 +1,12 @@
+/.idea/
+*.ipr
+*.iml
+*.log
+target/
+TestData/
+/.project
+/.classpath
+/.settings
+*.png
+/Log/
+*.iws

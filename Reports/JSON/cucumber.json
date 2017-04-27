@@ -1,0 +1,189 @@
+[
+  {
+    "id": "claim-submission",
+    "description": "As a user I want to submit my claim application\nSo that I can get Bereavement Support Benefit",
+    "name": "Claim Submission",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "description": "",
+        "name": "Launch Application",
+        "keyword": "Background",
+        "line": 7,
+        "steps": [
+          {
+            "result": {
+              "duration": 1273925598,
+              "status": "passed"
+            },
+            "name": "the Breavement Benefit application is launched",
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "Steps.the_Breavement_Benefit_application_is_launched()"
+            }
+          }
+        ],
+        "type": "background",
+        "comments": [
+          {
+            "value": "#------------------------------------------------------------------------------------",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 651302,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "id": "claim-submission;submit-claim-with-basic-data",
+        "tags": [
+          {
+            "name": "@SubmitClaim",
+            "line": 11
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 4930977926,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforestartUp(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Submit Claim with basic data",
+        "keyword": "Scenario",
+        "line": 12,
+        "steps": [
+          {
+            "result": {
+              "duration": 333312567,
+              "status": "passed"
+            },
+            "name": "a new claim is started",
+            "keyword": "When ",
+            "line": 13,
+            "match": {
+              "location": "Steps.a_new_claim_is_started()"
+            }
+          },
+          {
+            "result": {
+              "duration": 299739026,
+              "status": "passed"
+            },
+            "name": "agent submits claimant personal details",
+            "keyword": "And ",
+            "line": 14,
+            "match": {
+              "location": "Steps.populateCalimantDetails()"
+            }
+          },
+          {
+            "result": {
+              "duration": 77039687,
+              "status": "passed"
+            },
+            "name": "agent enter sex details",
+            "keyword": "And ",
+            "line": 15,
+            "match": {
+              "location": "Steps.populateSexDetails()"
+            }
+          },
+          {
+            "result": {
+              "duration": 216643183,
+              "status": "passed"
+            },
+            "name": "agent submits late partner details",
+            "keyword": "And ",
+            "line": 17,
+            "match": {
+              "location": "Steps.populatePartnerDetails()"
+            },
+            "comments": [
+              {
+                "value": "#And user submits first page knock out",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 216281852,
+              "status": "passed"
+            },
+            "name": "agent submits claimant claim date details",
+            "keyword": "And ",
+            "line": 18,
+            "match": {
+              "location": "Steps.populateClaimantClaimDetails()"
+            }
+          },
+          {
+            "result": {
+              "duration": 68288841,
+              "status": "passed"
+            },
+            "name": "agent selects rate of payment details",
+            "keyword": "And ",
+            "line": 19,
+            "match": {
+              "location": "Steps.populateRatePaymentDetails()"
+            }
+          },
+          {
+            "result": {
+              "duration": 254264230,
+              "status": "passed"
+            },
+            "name": "agent submit payment details",
+            "keyword": "And ",
+            "line": 23,
+            "match": {
+              "location": "Steps.populatePaymentDetails()"
+            },
+            "comments": [
+              {
+                "value": "#And user submits personal details",
+                "line": 20
+              },
+              {
+                "value": "#And user submits contact details",
+                "line": 21
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 300382399,
+              "status": "passed"
+            },
+            "name": "a agent can submit the claim",
+            "keyword": "Then ",
+            "line": 24,
+            "match": {
+              "location": "Steps.a_agent_can_submit_the_claim()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "F1_SubmitClaim.feature"
+  }
+]
