@@ -1,2 +1,2 @@
 #!/bin/bash
-mvn test -DfailIfNoTests=false -Dbrowser=chrome -Denvironment=qa -Dtest=TestRunner
+mvn test -DfailIfNoTests=false -Dbrowser=chrome -Denvironment=dev -Dtest=TestRunner
